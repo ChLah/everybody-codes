@@ -36,10 +36,7 @@ def solve_2(words: list[str], lines: list[str])->tuple[int, list[str]]:
 
     return count, new_lines
 
-def solve_3(words: list[str], lines: list[str])->int:
-    # add words in reverse
-    words.extend([x[::-1] for x in words])
-    
+def solve_3(words: list[str], lines: list[str])->int:    
     new_lines = solve_2(words, lines)[1]
     
     for i in range(len(lines[0])):
