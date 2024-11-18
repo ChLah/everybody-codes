@@ -21,7 +21,7 @@ def solve_2(numbers: list[int])->int:
 
 def solve_3(numbers: list[int])->int:
     min_counts = get_min_counts(max(numbers), [101,100,75,74,50,49,38,37,30,25,24,20,16,15,10,5,3,1])
-    count = 0;
+    count = 0
 
     for n in numbers:
         half = n // 2
@@ -35,7 +35,7 @@ def solve_3(numbers: list[int])->int:
         
         count += min_val
 
-    return count;
+    return count
 
 
 if __name__ == "__main__":
